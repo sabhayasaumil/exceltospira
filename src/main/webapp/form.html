@@ -1,0 +1,8 @@
+<div ng-controller = 'mainController'>
+<form enctype="multipart/form-data" ng-submit="uploadFunc()">
+    Select xlsx file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload" file-model="myFile"">
+    <input type="submit" value="Submit" name="submit">
+</form>
+    {{error}}
+</div>

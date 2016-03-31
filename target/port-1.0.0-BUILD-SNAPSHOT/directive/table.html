@@ -1,0 +1,13 @@
+<table border='1'>
+    <tr><th>Folder ID</th><th>Mode</th><th>TC ID</th><th>TC Name</th><th>TC Description</th><th>TC Steps</th><th>Expected Result</th><th>Status</th></tr>
+    <tr ng-repeat="entry in excelObject.table">
+        <td>{{ entry.folder }}</td>
+        <td>{{ entry.mode }}</td>
+        <td>{{ entry.tcID }}</td>
+        <td>{{ entry.tcName }}</td>
+        <td>{{ entry.tcDescription }}</td>
+        <td>{{ entry.tcSteps }}</td>
+        <td>{{ entry.tc.expectedResult }}</td>
+        <td>{{ entry.tcStatus }}</td>
+    </tr>
+</table>
